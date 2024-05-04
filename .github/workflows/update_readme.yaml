@@ -35,7 +35,7 @@ jobs:
           commit_sha=$(jq -r '.pull_request.merge_commit_sha' "$GITHUB_EVENT_PATH")
           echo "pull_request_number=$pr_num" >> $GITHUB_ENV
           echo "commit_sha=$commit_sha" >> $GITHUB_ENV
-
+          
       # Run the Python script
       - name: Generate UpdatedREADME
         env:
