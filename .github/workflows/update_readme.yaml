@@ -6,9 +6,9 @@ on:
 
 jobs:
   update-readme:
+    if: github.event.pull_request.merged == true && github.actor != 'github-actions[bot]'
     name: Update README after PR merge
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged == true
 
     steps:
       # Check out the repo to access its content
@@ -57,3 +57,5 @@ jobs:
       - name: Enable Debug Logging
         run: |
           echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
+
+
