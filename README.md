@@ -17,11 +17,19 @@ Embrace your creativity and personalize this project to craft a solution that un
 4. **Add The Features You Want**: Let your creativity shine by adding a unique feature that significantly simplifies or enhances your daily routines. Innovate with functionalities that solve problems and improve efficiency or satisfaction in meaningful ways.
 
 ## Privacy and Submission Guidelines
-- **Submission Requirements:** Please submit a link to your public repo with your implementation or a Loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com). 
+- **Submission Requirements:** Please submit a link to your public repo with your implementation or a Loom video showcasing your work on the [BloomTech AI Platform](app.bloomtech.com).
 - **Sensitive Information:** If your implementation involves sensitive information, you are not required to submit a public repository. Instead, a detailed review of your project through a Loom video is acceptable, where you can demonstrate the functionality and discuss the technologies used without exposing confidential data.
 
 ## GitHub Test 
 
 ---
+
+**Changes Made:**
+- Updated the `<title>` tag in `src/index.html` to reflect the change.
+- Added a link to `styles.css` in `src/index.html` for styling.
+- Added a `<header>` section in `src/index.html` for better structure.
+- Added three new sections with content in `src/index.html` for better organization and clarity.
+- Included a script tag linking to `actions.js` in `src/index.html` for functionality.
+- Updated styles in `src/styles.css` for better layout and presentation.
 
 Please let me know if you need any further modifications or if there are additional details you'd like to include.
