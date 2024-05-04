@@ -1,3 +1,5 @@
+Updated README based on recent code changes and commit messages:
+
 # AI for Developer Productivity: Technical Writer Agent
 
 ## Overview
