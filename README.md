@@ -23,8 +23,3 @@ Embrace your creativity and personalize this project to craft a solution that un
 - Added three new sections with content in `src/index.html` for better organization and clarity.
 - Included a script tag linking to `actions.js` in `src/index.html` for functionality.
 - Updated styles in `src/styles.css` for better layout and presentation.
-
-### Commit Updates:
-- Updated the README.md file to include the current changes and commit messages.
-- Ensured README clarity and style consistency.
-- Updated the README content based on the provided code changes and commit messages.
