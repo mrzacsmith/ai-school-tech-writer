@@ -32,4 +32,4 @@ Embrace your creativity and personalize this project to craft a solution that un
 - Included a script tag linking to `actions.js` in `src/index.html` for functionality.
 - Updated styles in `src/styles.css` for better layout and presentation.
 
-Please let me know if you need any further modifications or if there are additional details you'd like to include.
+**Note:** The README has been updated to reflect recent code changes related to the project.
