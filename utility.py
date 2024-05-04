@@ -2,9 +2,11 @@ import os
 import base64
 from langchain_openai import ChatOpenAI
 from langchain_core.output_parsers.string import StrOutputParser
+from datetime import datetime
 
 
 def format_data_for_openai(diffs, readme_content, commit_messages):
+    date = datetime.now().strftime("%Y-%m-%d")
     prompt = None
 
     # Combine the changes into a string with clear delineation.
@@ -20,6 +22,7 @@ def format_data_for_openai(diffs, readme_content, commit_messages):
 
     # Construct the prompt with clear instructions for the LLM.
     prompt = (
+        f"Changes as of {date}:\n"
         "Please review the following code changes and commit messages from a GitHub pull request:\n"
         "Code changes from Pull Request:\n"
         f"{changes}\n"
@@ -27,7 +30,9 @@ def format_data_for_openai(diffs, readme_content, commit_messages):
         f"{commit_messages}"
         "Here is the current README file content:\n"
         f"{readme_content}\n"
-        "Consider the code changes and commit messages, determine if the README needs to be updated. If so, edit the README, ensuring to maintain its existing style and clarity.\n"
+        "Consider the code changes and commit messages, determine if the README needs to be updated. If so, "
+        "edit the README, ensuring to maintain its existing style and clarity. Do not include any addtional notes "
+        "outside of the commit changes. \n"
         "Updated README:\n"
     )
 
@@ -40,7 +45,8 @@ def call_openai(prompt):
     try:
         messages = [
             {"role": "system",
-             "content": "You are an AI trained to help updating READMEs based on code changes and commit messages."},
+             "content": "You are a senior software development team manager, and will use best practices to ensure "
+                        "that your role to update READMEs with clear and concise commit updates."},
             {"role": "user", "content": prompt},
         ]
 
