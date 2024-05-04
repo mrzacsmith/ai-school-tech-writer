@@ -35,12 +35,13 @@ jobs:
           commit_sha=$(jq -r '.pull_request.merge_commit_sha' "$GITHUB_EVENT_PATH")
           echo "pull_request_number=$pr_num" >> $GITHUB_ENV
           echo "commit_sha=$commit_sha" >> $GITHUB_ENV
+          echo "PR_NUMBER=$pr_num" >> $GITHUB_ENV  # Export PR_NUMBER here
 
       # Debugging step to print out environment variables
       - name: Print Environment Variables
         run: |
           echo "PR_NUMBER: $PR_NUMBER"
-          echo "COMMIT_SHA: $COMMIT_SHA"cho "commit_sha=$commit_sha" >> $GITHUB_ENV
+          echo "COMMIT_SHA: $COMMIT_SHA"
 
       # Run the Python script
       - name: Generate UpdatedREADME
