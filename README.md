@@ -27,3 +27,7 @@ Embrace your creativity and personalize this project to craft a solution that un
 - Added a form with input fields for name, email, and password in `src/index.html`.
 - Updated styles in `src/styles.css` to include styling for the new form.
 - Added a table with travel information in `src/index.html` for better organization and presentation.
+- Updated GitHub workflow to use the latest version of actions/setup-python without specifying a Node.js version.
+- Added a table with travel information in `src/index.html` for better organization and presentation.
+- Removed redundant code related to table structure in `src/index.html`.
+- Enabled debug logging in GitHub workflow for troubleshooting purposes.
