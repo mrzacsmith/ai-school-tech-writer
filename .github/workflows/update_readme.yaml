@@ -17,7 +17,7 @@ jobs:
 
       # Set up Python using the latest stable version
       - name: Setup Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v2  # Updated to latest version that supports Node.js 20
         with:
           python-version: '3.12'
 
@@ -45,8 +45,8 @@ jobs:
           PR_NUMBER: ${{ steps.pr_info.outputs.pr_number }}
           COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
         run: python main.py
-      # Additional step to enable debugging, helps in troublshooting
+
+      # Additional step to enable debugging, helps in troubleshooting
       - name: Enable Debug Logging
         run: |
           echo "ACTIONS_STEP_DEBUG=true" >> $GITHUB_ENV
-          
