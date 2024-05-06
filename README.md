@@ -30,3 +30,5 @@ Feel free to personalize this project to address challenges and inefficiencies i
 - Updated GitHub workflow to use the latest version of actions/setup-python.
 - Removed redundant code related to table structure in `src/index.html`.
 - Enabled debug logging in GitHub workflow.
+- Updated content in `src/index.html` for improved user engagement.
+
